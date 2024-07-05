@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'MyFont-Bold';
+    src: local('MyFont-Bold'), url('./fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'MyFont-Regular';
+    src: local('MyFont-Regular'), url('./fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MyFont-Medium';
+    src: local('MyFont-Medium'), url('./fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

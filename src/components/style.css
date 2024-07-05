@@ -1,0 +1,29 @@
+.circle{
+    /* border:3px solid yellow; */
+    border-radius: 50%;
+    width: 300px;
+    /* background-color: black; */
+    /* height: 300px; */
+    /* position: absolute; */
+    top: 30px;
+    margin-top:3rem;
+}
+.circle1{
+    width: 297px;
+    height: 300px;
+    
+    
+}
+.circle2{
+    width: 292px;
+    height: 300px;
+}
+.circle3{
+    width: 295px;
+    height: 300px;
+}
+.section1_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

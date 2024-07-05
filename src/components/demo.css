@@ -1,0 +1,247 @@
+.hero {
+    background-color: #070A13;
+    /* border: 1px solid lightgray; */
+    padding: 0 3rem;
+    padding-left: 100px;
+
+}
+
+.hero::after {
+    /* content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background-color: #070A13;  */
+    /* background-image: url("../animation-assets/frame.png"); */
+    /* opacity: .7; */
+
+}
+
+.frames {
+    z-index: 999;
+    /* border: 1px solid purple; */
+    background-color: #070A13;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background-image: url("../animation-assets/frame2.png");
+
+
+}
+
+.shadow_div {
+    background: linear-gradient(288deg, rgba(0, 249, 144, 0.60) 4.09%, rgba(35, 176, 255, 0.60) 126.38%);
+    width: 40%;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(180px);
+    /* filter: blur(50px); */
+    position: absolute;
+    top: -25vh;
+    left: 30%;
+    z-index: 400;
+}
+
+@media screen and (min-width: 1200px) {
+    .shadow_div {
+        top: -20vh;
+    }
+}
+
+
+
+
+
+.title2 {
+    /* position: absolute;
+    top: 20%;
+    left: 40%; */
+    text-align: center;
+    font-family: Satoshi;
+    z-index: 999px;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(314deg, rgba(248, 250, 252, 0.32) 8.27%, #F8FAFC 57.24%, rgba(248, 250, 252, 0.44) 96.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -2rem;
+
+    /* margin-top: -5rem; */
+}
+
+.text2 {
+    /* position: absolute;
+    top: 60%;
+    left: 18%; */
+    /* width: 65%; */
+    max-width: 800px;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(314deg, rgba(248, 250, 252, 0.32) 8.27%, #F8FAFC 57.24%, rgba(248, 250, 252, 0.44) 96.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0 auto;
+    color: transparent;
+    /* Set text color to transparent */
+    /* background-clip: text; */
+}
+
+.text2>span {
+    background: linear-gradient(92deg, #00F990 47.02%, #23B0FF 57.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shape {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-size: cover;
+}
+
+.dshape {
+    /* border: 1px solid red; */
+
+
+}
+
+.cotnent_div_d {
+    /* border: 1px solid yellow; */
+    background-image: url("../animation-assets/shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    width: 100%;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cotnent_div_d::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    /* border: 1px solid red; */
+    /* background: linear-gradient(288deg, rgba(0, 249, 144, 0.60) 4.09%, rgba(35, 176, 255, 0.60) 126.38%); */
+    /* Adjust mix-blend-mode for desired effect */
+    /* background-color: #070A13; 
+    opacity: .5; */
+    /* mix-blend-mode: multiply;  */
+    /* background-color: #070A13;  */
+    /* opacity: .5; */
+}
+
+.frames::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* background-image: url("../animation-assets/frame.png"); */
+    /* opacity: .7; */
+
+}
+
+.frames::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.frames {
+    /* border: 1px solid purple; */
+    /* background-color: #070A13; */
+
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+
+
+}
+
+.hamburger {
+    border: 1px solid lightgray;
+    background-color: black;
+    padding: 1rem;
+    width: 60px;
+    cursor: pointer;
+}
+
+.hamburger>div {
+    border: 1px solid lightgray;
+    margin-top: 3px;
+}
+
+.nav_content {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1099;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 22px;
+    padding-top: 100px;
+    /* display: none; */
+
+}
+
+.nav_content>h1 {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav_content>h1:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    padding: 1rem;
+    color: black;
+}

@@ -1,0 +1,113 @@
+.hero {
+    background-color: #070A13;
+    /* border: 1px solid lightgray; */
+    padding:0 3rem;
+    padding-left:100px;
+}
+
+.frame {
+    /* border: 1px solid purple; */
+    background-color: #070A13;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background-image: url("../animation-assets/frame.png");
+
+}
+
+.shadow_div {
+    background: linear-gradient(288deg, rgba(0, 249, 144, 0.60) 4.09%, rgba(35, 176, 255, 0.60) 126.38%);
+    /* position: absolute;
+    top: 0; */
+    /* margin: auto; */
+    /* width: 300px; */
+    width: 40%;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(207px);
+    /* filter: blur(50px); */
+    position: absolute;
+    top: -25vh;
+    left: 30%;
+    z-index: 400;
+}
+
+/* .frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../animation-assets/shape.png");
+    background-size: cover;
+  
+} */
+
+
+
+.shape {
+    width: 100%;
+    /* height: 0%; */
+    position: absolute;
+    top: 0;
+    left: 0%;
+    /* background-image: url("../animation-assets/shape.png"); */
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); */
+    /* position: relative; */
+}
+
+.title {
+    /* position: absolute;
+    top: 20%;
+    left: 40%; */
+    text-align: center;
+    font-family: Satoshi;
+    z-index: 999px;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(314deg, rgba(248, 250, 252, 0.32) 8.27%, #F8FAFC 57.24%, rgba(248, 250, 252, 0.44) 96.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -5rem;
+}
+
+.text {
+    /* position: absolute;
+    top: 60%;
+    left: 18%; */
+    width: 65%;
+    max-width: 800px;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(92deg, #00F990 47.02%, #23B0FF 57.74%);
+    -webkit-background-clip: text;
+    /* For older versions of Safari/WebKit */
+    background-clip: text;
+    margin:0 auto ;
+    color: transparent;
+    /* Set text color to transparent */
+    /* background-clip: text; */
+}
+
+
+
+.cotnent_div{
+    /* border: 1px solid yellow; */
+
+}
+
+.dshape{
+    border:1px solid red;
+    
+}

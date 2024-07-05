@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="342" height="393"> <defs> 
+<linearGradient id="bs-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%"> <stop offset="0%" stop-color="rgba(246, 238, 130, 0.7)"></stop> <stop offset=" 100%" stop-color="rgba(255, 230, 41,
+ 0.7)" data-change="" stop-opacity="0"></stop> </linearGradient> </defs> 
+<path fill="url(#bs-a)" fill-rule="evenodd" d="m104 .827 461 369-284 58z" 
+transform="translate(0 -112.827)" opacity=".7"></path> </svg
