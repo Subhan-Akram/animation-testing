@@ -55,6 +55,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import "../font.css"
+import MainPage from '../MainPage';
 function SectionDemo() {
     const navRef = useRef(null);
     const hamburgerRef = useRef(null);
@@ -70,14 +71,12 @@ function SectionDemo() {
         // Set initial position
         gsap.to(navRef.current, { x: '-100%', duration: 0, });
 
-        console.log("navRef.current.children", navRef.current.children)
         gsap.to(navRef.current.children, { x: '-100%', duration: 0, opacity: 1 });
         hamburgerRef.current.addEventListener('click', () => {
             setIsOpen(!isOpen); // Toggle state on click
         });
-        // Set initial opacity to 0 for all elements using CSS
-        gsap.set([frameRef.current, shadowDivRef.current, dShapeRef.current], { opacity: 0 });
-        // Animate opacity 1 by 1 with 1-second duration and stagger
+
+     
         tl.fromTo(frameRef.current, { opacity: 0, delay: 1, }, { opacity: 0, duration: 1 })
             .fromTo(frameRef.current, { opacity: 0, duration: 1 }, { opacity: 1, duration: 1 })
             .fromTo(dShapeRef.current, { opacity: 0 }, { opacity: 1, duration: 1 }, 2.5) // Stagger by 0.5 seconds
@@ -86,14 +85,12 @@ function SectionDemo() {
             .from(title2Ref.current, { y: -110, opacity: 0, duration: 1, ease: "power2.inOut" }, '+=0.2')
             .from(text2Ref.current, { y: 110, opacity: 0, duration: 1, ease: "power2.inOut" }, '+=0.2');
         const startShadowFlicker = () => {
-            console.log("run now===")
             gsap.to(shadowDivRef.current, { opacity: .75, duration: 2, repeat: -1, yoyo: true });
         };
         // Cleanup function (optional)
         tl.play().then(startShadowFlicker);
         return () => {
             tl.kill();
-            // shadowFlicker.kill(); // Kill the flickering animation separately
         };
     });
 
@@ -139,7 +136,7 @@ function SectionDemo() {
                     <div />
                 </div>
                 <div className='nav_content' ref={navRef}>
-                    <h2 className='title1' style={{cursor:"pointer", position: "absolute", top: "10px", right: "10px", textAlign: "right", fontWeight: "bold" }} onClick={() => { handleClose("-100%") }}>X</h2>
+                    <h2 className='title1' style={{ cursor: "pointer", position: "absolute", top: "10px", right: "10px", textAlign: "right", fontWeight: "bold" }} onClick={() => { handleClose("-100%") }}>X</h2>
                     <h1 className='title2' style={{ width: "100%" }}>Home</h1>
                     <h1 className='title2'>About Us</h1>
                     <h1 className='title2'>Contact Us</h1>

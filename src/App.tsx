@@ -6,6 +6,7 @@ import "./App.css";
 // import AnimatedButton from "./AnimatedButton";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -16,47 +17,27 @@ import HeroSection from "./components/HeroSection";
 import SectionDemo from "./components/SectionDemo";
 import CommentsSection from "./components/comments-section";
 import Section6 from "./components/section6";
+import MainPage from "./MainPage";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function App() {
+
   return (
     <div className="main">
-      {/* <HeroSection /> */}
-      <SectionDemo />
-      {/* <AnimatedButton /> */}
-   
-      <Section6 />
-      {/* <Section1 /> */}
-      <div style={{ overflow: "hidden" }}>
-        {" "}
-        {/* <Section2 /> */}
-      </div>
-      
-      <div style={{ overflow: "hidden" }}>
-        {" "}
-        {/* <Section3 /> */}
-      </div>
-      <div style={{ overflow: "hidden" }}>
-        {" "}
-        <Section4 />
-      </div>
-      {/* <div className="header box">
-        <h1 style={{ textAlign: "center" }} className=" font-medium border-2 ">
-          React 3D Animation Learning
-        </h1>
-      </div>
-      <div className="hero box">
-        <h1 style={{ textAlign: "center" }} className=" font-medium border-2 ">
-          React 3D Animation Learning
-        </h1>
-      </div>
-      <div className="content box">
-        <h1 style={{ textAlign: "center" }} className="font-medium border-2 ">
-          React 3D Animation Learning
-        </h1>
-      </div> */}
+    
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage ><h1 className="font-bold text-[2rem] mt-4 text-center">Main Page</h1></MainPage>} />
+          <Route path="/gsap-animation" element={<MainPage><SectionDemo /></MainPage>} />
+          <Route path="/gsap-animation/scroll-animation" element={<MainPage><Section4 /></MainPage>} />
+          <Route path="/spring-animation" element={<MainPage><Section6 /></MainPage>} />
+        </Routes>
+      </Router>
+
+    
+     
     </div>
   );
 }

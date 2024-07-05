@@ -2,6 +2,7 @@ import React from 'react';
 import '../demo.css';
 
 import { useSpring, animated } from '@react-spring/web';
+import MainPage from '../../MainPage';
 
 function Section6() {
   const [frameValues] = useSpring(() => ({
@@ -34,6 +35,7 @@ function Section6() {
     loop: true, 
   }));
   return (
+   <>
     <div className='hero' style={{ marginTop: '2rem' }}>
       <animated.div className='frames' style={{ ...frameValues }}>
         <div className='shadow_div' style={{ ...shadowValues,...shadowValues2 }}> {/* Content for shadow */}</div>
@@ -47,6 +49,7 @@ function Section6() {
         </animated.div>
       </animated.div>
     </div>
+   </>
   );
 }
 
